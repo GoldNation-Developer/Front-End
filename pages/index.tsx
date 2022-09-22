@@ -1,11 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from 'next';
+import PageComponent from '../src/Modules/Common/Presentation/Components/Layouts/Page/PageComponent';
 
-const Home: NextPage = () => {
-  return (
+const Home: NextPage = () => (
+  <PageComponent title="Home Page">
     <h1>Home Page</h1>
-  )
-}
+  </PageComponent>
+);
 
-export default Home
+export default Home;
