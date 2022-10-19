@@ -51,7 +51,6 @@ import HomeFive from './pages/homepages/HomeFive';
 import InstructorPageOne from './pages/innerpages/InstructorPageOne';
 import InstructorPageTwo from './pages/innerpages/InstructorPageTwo';
 import InstructorPageThree from './pages/innerpages/InstructorPageThree';
-import LandingDemo from './pages/LandingDemo';
 import LoginRegister from './pages/innerpages/LoginRegister';
 import Pricing from './pages/innerpages/Pricing';
 import PrivacyPolicy from './pages/innerpages/PrivacyPolicy';
@@ -63,14 +62,19 @@ import Error from './pages/innerpages/Error';
 // Import Css Here 
 import './assets/scss/style.scss';
 
+// custom pages
+import LandingCustom from './pages/custom/LandingCustom';
+import AboutUsCustom from './pages/custom/AboutUsCustom';
+
 function App() {
     return (
         <Router>
             <ScrollToTop>
                 <Routes>
-                    <Route exact path='/' element={<LandingDemo/>}/>
+                    <Route exact path='/' element={<LandingCustom/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/about-us'}`} element={<AboutUsCustom/>}/>
+                    {/* ============================================================================= */}
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-1'}`} element={<HomeOne/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/home-2'}`} element={<HomeTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-3'}`} element={<HomeThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-4'}`} element={<HomeFour/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-5'}`} element={<HomeFive/>}/>

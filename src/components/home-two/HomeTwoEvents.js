@@ -3,18 +3,19 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import SectionTitle from '../sectionTitle/SectionTitle';
 import EventOne from '../event/EventOne';
 import EventData from '../../data/event/EventData.json';
+import EventTwo from '../event/EventTwo';
 
 const HomeTwoEvents = () => {
     const EventItems = EventData.slice(0, 3);
     return (
-        <div className="edu-event-area eduvibe-home-two-event edu-section-gap bg-image video-gallery-overlay-area">
+        <div className="edu-event-area eduvibe-home-two-event edu-section-gap bg-image">
             <div className="container eduvibe-animated-shape">
                 <div className="row">
                     <div className="col-lg-12">
                         <SectionTitle
                             classes = "text-center"
-                            slogan = "Let’s Learn Together"
-                            title = "Upcoming Educational Events"
+                            slogan = "Info Kelas yang Tersedia"
+                            title = "Kelas Bahasa Goldnation"
                         />
                     </div>
                 </div>

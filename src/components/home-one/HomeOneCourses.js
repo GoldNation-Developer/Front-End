@@ -13,8 +13,8 @@ const HomeOneCourses = () => {
                     <div className="col-lg-12">
                         <SectionTitle
                             classes = "text-center"
-                            slogan = "Popular Courses"
-                            title = "Featured On This Month"
+                            slogan = "program Populer"
+                            title = "Kami menawarkan program terbaik"
                         />
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const HomeOneCourses = () => {
                 <div className="row mt--60">
                     <div className="col-lg-12">
                         <div className="load-more-btn text-center">
-                            <Link className="edu-btn" to="/course-1">View All Courses<i className="icon-arrow-right-line-right"></i></Link>
+                            <Link className="edu-btn" to="/course-1">Lihat semua program<i className="icon-arrow-right-line-right"></i></Link>
                         </div>
                     </div>
                 </div>

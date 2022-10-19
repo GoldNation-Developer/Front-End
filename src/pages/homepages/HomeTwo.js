@@ -15,13 +15,13 @@ import FooterOne from '../../common/footer/FooterOne';
 const HomeTwo = () => {
     return (
         <>
-            <SEO title="Home 2" />
+            <SEO title="Home" />
 
             <HeaderTwo styles="header-transparent header-style-2" />
 
             <BannerTwo />
             
-            <HomeTwoService />
+            {/* <HomeTwoService /> */}
             
             <AboutFour />
 

@@ -10,8 +10,8 @@ const BannerTwo = () => {
                         <div className="inner">
                             <div className="content">
                                 <span className="pre-title">Better Learning Future With Us</span>
-                                <h1 className="title">Committed To Learn Excellence In Education</h1>
-                                <p className="description">It is long established that a reader will be distracted by the <br /> readable popular and best content.</p>
+                                <h1 className="title">EXPLORE UNIVERSITAS</h1>
+                                <p className="description">Dapatkan info seputar universitas impianmu di seluruh dunia, <br /> belajar bahasa asing dari native langsung.</p>
                                 <div className="read-more-btn">
                                     <Link className="edu-btn" to="#">Get Started Today <i  className="icon-arrow-right-line-right"></i></Link>
                                 </div>
@@ -23,7 +23,7 @@ const BannerTwo = () => {
                     </div>
                     <div className="col-lg-5">
                         <div className="banner-thumbnail">
-                            <img className="girl-thumb" src="/images/banner/banner-02/banner-01.png" alt="Girl Images" />
+                            <img className="girl-thumb" src={`https://eduvibe.react.devsvibe.com/images/banner/banner-02/banner-01.png`} alt="Girl Images" />
                         </div>
                         <div className="banner-bg d-lg-block d-none">
                             <img className="girl-bg" src="/images/banner/banner-02/girl-bg.png" alt="Girl Background" />

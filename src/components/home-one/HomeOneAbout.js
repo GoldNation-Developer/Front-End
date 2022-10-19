@@ -27,12 +27,9 @@ const HomeOneAbout = () => {
                 <div className="row g-5">
                     <div className="col-lg-6">
                         <div className="about-image-gallery">
-                            <img className="image-1" src="/images/about/about-09/about-image-01.jpg" alt="About Main Thumb" />
+                            <img className="image-1" src={`https://eduvibe.react.devsvibe.com/images/about/about-09/about-image-01.jpg`} alt="About Main Thumb" />
                             <div className="image-2">
-                                <img src="/images/about/about-09/about-image-02.jpg" alt="About Parallax Thumb" />
-                            </div>
-                            <div className="badge-inner">
-                                <img className="image-3" src="/images/about/about-09/badge.png" alt="About Circle Thumb" />
+                                <img src={`https://eduvibe.react.devsvibe.com/images/about/about-09/about-image-02.jpg`} alt="About Parallax Thumb" />
                             </div>
                             <div className="shape-image shape-image-1">
                                 <img src="/images/shapes/shape-04-01.png" alt="Shape Thumb" />
@@ -42,7 +39,7 @@ const HomeOneAbout = () => {
                     <div className="col-lg-6">
                         <div className="inner">
                             <SectionTitle
-                                slogan = "About Us"
+                                slogan = "Tentang kami"
                                 title = "Creating A Community Of Life Long Learners"
                             />
                             <ScrollAnimation 
@@ -50,8 +47,7 @@ const HomeOneAbout = () => {
                                 animateOut="fadeInOut"
                                 animateOnce={ true }
                             >
-                                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc
-                                null liobortis nibh porttitor. Facilisi arcu, nibh vel risus, morbi pharetra.</p>
+                                <p className="description">Goldnation adalah platform yang menyediakan bimbingan persiapan SMA dan S1 ke luar negeri. Sudah memiliki ... kelas bahasa yang terdiri dari .... dan sudah membantu ... siswa mencapai universitas impiannya.</p>
                             </ScrollAnimation>
                             { items && items.length > 0 &&
                                 <div className="about-feature-list">
@@ -82,7 +78,7 @@ const HomeOneAbout = () => {
                                 className="read-more-btn"
                                 animateOnce={ true }
                             >
-                                <Link className="edu-btn" to="/about-us-1">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
+                                <Link className="edu-btn" to="/about-us">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
                             </ScrollAnimation>
                             <div className="shape shape-6 about-parallax-2 d-xl-block d-none">
                                 <img src="/images/shapes/shape-07.png" alt="Shape Thumb" />

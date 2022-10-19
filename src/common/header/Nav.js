@@ -5,29 +5,26 @@ const Nav = () => {
     return (
         <ul className="mainmenu">
             <li className="has-droupdown">
-                <Link to="#">Home</Link>
+                <Link to="#">Kelas Bahasa</Link>
                 <ul className="submenu">
-                    <li><Link to="/home-1">Home 1</Link></li>
-                    <li><Link to="/home-2">Home 2</Link></li>
-                    <li><Link to="/home-3">Home 3</Link></li>
-                    <li><Link to="/home-4">Home 4</Link></li>
-                    <li><Link to="/home-5">Home 5</Link></li>
-                    <li><Link to="/">Landing Demo</Link></li>
+                    <li><Link to="/">Bahasa Inggris</Link></li>
+                    <li><Link to="/">Bahasa Jepang</Link></li>
+                    <li><Link to="/">Bahasa Korea</Link></li>
                 </ul>
             </li>
 
             <li className="has-droupdown">
-                <Link to="#">About</Link>
+                <Link to="#">Test bahasa</Link>
                 <ul className="submenu">
-                    <li><Link to="/about-us-1">About Us 1</Link></li>
-                    <li><Link to="/about-us-2">About Us 2</Link></li>
-                    <li><Link to="/about-us-3">About Us 3</Link></li>
+                    <li><Link to="/">TOEFL</Link></li>
+                    <li><Link to="/">TOEIC</Link></li>
+                    <li><Link to="/">IELTS</Link></li>
                 </ul>
             </li>
             
             <li className="has-droupdown">
-                <Link to="#">Courses</Link>
-                <ul className="submenu">
+                <Link to="#">Program</Link>
+                {/* <ul className="submenu">
                     <li><Link to="/course-1">Course 1</Link></li>
                     <li><Link to="/course-2">Course 2</Link></li>
                     <li><Link to="/course-3">Course 3</Link></li>
@@ -41,12 +38,12 @@ const Nav = () => {
                     <li><Link to="/course-carousel">Course Carousel</Link></li>
                     <li><Link to="/course-load-more">Course( Load More )</Link></li>
                     <li><Link to="/course-category/business">Course Category Archive</Link></li>
-                </ul>
+                </ul> */}
             </li>
             
             <li className="has-droupdown">
                 <Link to="#">Pages</Link>
-                <ul className="submenu">
+                {/* <ul className="submenu">
                     <li className="has-droupdown">
                         <Link to="#">Event</Link>
                         <ul className="submenu">
@@ -82,10 +79,10 @@ const Nav = () => {
                     <li><Link to="/coming-soon">Coming Soon</Link></li>
                     <li><Link to="/login-register">Login/Register</Link></li>
                     <li><Link to="/404">404</Link></li>
-                </ul>
+                </ul> */}
             </li>
             
-            <li className="has-droupdown"><Link to="#">Blog</Link>
+            {/* <li className="has-droupdown"><Link to="#">Blog</Link>
                 <ul className="submenu">
                     <li><Link to="/blog-grid-1">Blog Grid 1</Link></li>
                     <li><Link to="/blog-grid-2">Blog Grid 2</Link></li>
@@ -102,15 +99,15 @@ const Nav = () => {
                     <li><Link to="/tag/finance">Tag Archive</Link></li>
                     <li><Link to="/author/hazel-thomas">Author Archive</Link></li>
                 </ul>
-            </li>
+            </li> */}
 
-            <li className="has-droupdown">
+            {/* <li className="has-droupdown">
                 <Link to="/">Contact</Link>
                 <ul className="submenu">
                     <li><Link to="/contact-me">Contact Me</Link></li>
                     <li><Link to="/contact-us">Contact Us</Link></li>
                 </ul>
-            </li>
+            </li> */}
         </ul>
     )
 }

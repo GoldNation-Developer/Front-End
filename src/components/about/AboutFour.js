@@ -5,7 +5,7 @@ import SectionTitle from '../sectionTitle/SectionTitle';
 
 const AboutFour = () => {
     return (
-        <div className="edu-about-area about-style-3 edu-section-gap bg-image">
+        <div className="edu-about-area about-style-3 edu-section-gap">
             <div className="container eduvibe-animated-shape">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-6 pr--80">

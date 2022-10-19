@@ -9,7 +9,7 @@ const LoginRegister = () => {
     return (
         <>
             <SEO title="Login & Register" />
-            <Layout>
+            <div>
 
                 <BreadcrumbOne 
                     title="Login & Register"
@@ -30,7 +30,7 @@ const LoginRegister = () => {
                         </div>
                     </div>
                 </div>
-            </Layout>
+            </div>
         </>
     )
 }

@@ -27,6 +27,7 @@ const HeaderTwo = ( { styles, disableSticky, searchDisable, buttonStyle } ) => {
     return (
         <>
             <header className={`edu-header ${ stickyStatus } ${ styles || '' } ${ classes || '' }`}>
+                <div className='container'>
                 <div className="row align-items-center">
                     <div className="col-lg-4 col-xl-3 col-md-6 col-6">
                         <div className="logo">
@@ -45,13 +46,13 @@ const HeaderTwo = ( { styles, disableSticky, searchDisable, buttonStyle } ) => {
                     <div className="col-lg-8 col-xl-3 col-md-6 col-6">
                         <div className="header-right d-flex justify-content-end">
                             <div className="header-menu-bar">
-                                { ! searchDisable && 
+                                {/* { ! searchDisable && 
                                     <div className="quote-icon quote-search">
                                         <button className="white-box-icon search-trigger header-search" onClick={ onSearchHandler }>
                                             <i className="ri-search-line"></i>
                                         </button>
                                     </div>
-                                }
+                                } */}
                                 <div className="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
                                     <Link className={`edu-btn btn-medium left-icon header-button ${ buttonStyle || '' }`} to={process.env.PUBLIC_URL + "/login-register"}>
                                         <i className="ri-user-line"></i>Login / Register
@@ -70,6 +71,7 @@ const HeaderTwo = ( { styles, disableSticky, searchDisable, buttonStyle } ) => {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </header>
             <ResponsiveMenu 

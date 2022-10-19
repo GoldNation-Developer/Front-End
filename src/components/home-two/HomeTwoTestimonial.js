@@ -10,7 +10,7 @@ const HomeTwoTestimonial = () => {
                     <div className="col-lg-12">
                         <SectionTitle
                             classes = "text-center"
-                            slogan = "Testimonial"
+                            slogan = "Testimoni"
                             title = "Our Lovely Students Feedback"
                         />
                     </div>

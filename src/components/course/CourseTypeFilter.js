@@ -46,8 +46,8 @@ const CourseTypeFilter = ( { itemToShow, showLoadMore, incrementPerClick } ) => 
             <div className="row g-5 align-items-center mb--45 mb--30 mt_md--30 mt_sm--30">
                 <div className="col-lg-6">
                     <div className="section-title text-start">
-                        <span className="pre-title">Who We Are</span>
-                        <h3 className="title">We Offer The Best Carrier</h3>
+                        <span className="pre-title">Program</span>
+                        <h3 className="title">Program terbaik kami </h3>
                     </div>
                 </div>
                 <div className="col-lg-6">

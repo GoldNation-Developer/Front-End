@@ -24,13 +24,6 @@ const items = [
         image: 'category-03.jpg',
         link: '#'
     },
-    {
-        title: 'Architecture',
-        info: 'Lorem Ipsum is simply for this dummy text of the printing.',
-        numberOfCourses: '20 Courses',
-        image: 'category-04.jpg',
-        link: '#'
-    }
 ];
 
 const CategoryOne = ( { wrapperClass, styleClass, buttonStatus } ) => {

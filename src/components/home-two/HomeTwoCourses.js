@@ -5,7 +5,6 @@ import CourseTypeFilter from '../../components/course/CourseTypeFilter';
 
 const HomeTwoCourses = () => {
     const [toggler, setToggler] = useState( false );
-    const videoLink = ['https://www.youtube.com/watch?v=pNje3bWz7V8'];
     return (
         <>
             <div className="edu-course-area eduvibe-home-two-course course-three-wrapper edu-section-gap bg-color-white">
@@ -42,11 +41,6 @@ const HomeTwoCourses = () => {
                     </div>
                 </div>
             </div>
-            <FsLightbox 
-                toggler={ toggler } 
-                sources={ videoLink }
-                maxYoutubeVideoDimensions={ { width: 900, height: 550 } }
-            />
         </>
     )
 }
