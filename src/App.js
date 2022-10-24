@@ -64,7 +64,9 @@ import './assets/scss/style.scss';
 
 // custom pages
 import LandingCustom from './pages/custom/LandingCustom';
-import AboutUsCustom from './pages/custom/AboutUsCustom';
+import LayoutPengguna from './common/layout/LayoutPengguna';
+import DashboardPengguna from './pages/dashboard/DashboardPengguna';
+
 
 function App() {
     return (
@@ -72,7 +74,12 @@ function App() {
             <ScrollToTop>
                 <Routes>
                     <Route exact path='/' element={<LandingCustom/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/about-us'}`} element={<AboutUsCustom/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/login-register'}`} element={<LoginRegister/>}/>
+
+                    <Route element={<LayoutPengguna/>}>
+                        <Route exact path={`${process.env.PUBLIC_URL + '/dashboard'}`} element={<DashboardPengguna/>}/>
+                    </Route>
+
                     {/* ============================================================================= */}
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-1'}`} element={<HomeOne/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-3'}`} element={<HomeThree/>}/>
@@ -122,7 +129,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/blog-standard'}`} element={<BlogStandard/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/blog-grid-right-sidebar'}`} element={<BlogGridRightSidebar/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/blog-grid-left-sidebar'}`} element={<BlogGridLeftSidebar/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/login-register'}`} element={<LoginRegister/>}/>
+
 
                     <Route exact path={`${process.env.PUBLIC_URL + '/blog-details/:id'}`} element={<BlogDetailsOne/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/blog-details-left-sidebar/:id'}`} element={<BlogDetailsTwo/>}/>

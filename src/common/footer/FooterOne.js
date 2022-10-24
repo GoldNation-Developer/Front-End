@@ -9,11 +9,11 @@ const FooterOne = () => {
                 <div className="footer-top">
                     <div className="container eduvibe-animated-shape">
                         <div className="row g-5">
-                            <div className="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="edu-footer-widget">
                                     <div className="logo">
                                         <Link to={process.env.PUBLIC_URL + "/"}>
-                                            <img className="logo-light" src="/images/logo/logo-white.png" alt="Footer Logo" />
+                                            <img className="logo-light" src="/images/logo/logogn-white.png" alt="Footer Logo" style={{height: '80px'}} />
                                         </Link>
                                     </div>
                                     <p className="description">It is a long established fact that a reader will be distracted by the readable content of a
@@ -27,7 +27,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div className="edu-footer-widget explore-widget">
                                     <h5 className="widget-title">Explore</h5>
                                     <div className="inner">
@@ -43,7 +43,7 @@ const FooterOne = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                            {/* <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                                 <div className="edu-footer-widget quick-link-widget">
                                     <h5 className="widget-title">Useful Links</h5>
                                     <div className="inner">
@@ -57,9 +57,9 @@ const FooterOne = () => {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
-                            <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div className="edu-footer-widget">
                                     <h5 className="widget-title">Contact Info</h5>
                                     <div className="inner">
@@ -92,7 +92,7 @@ const FooterOne = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="inner text-center">
-                                    <p>Copyright 2022 <a href="#">EduVibe</a> Designed By <a href="https://themeforest.net/user/devsvibe">DevsVibe</a>. All Rights
+                                    <p>Copyright 2022 Designed By <a href="https://themeforest.net/user/devsvibe">DevsVibe</a>. All Rights
                                         Reserved</p>
                                 </div>
                             </div>

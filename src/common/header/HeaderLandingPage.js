@@ -32,7 +32,7 @@ const HeaderLandingPage = ( { styles, disableSticky, buttonStyle } ) => {
                         <div className="col-lg-4 col-xl-3 col-md-6 col-6">
                             <div className="logo">
                                 <Link to={process.env.PUBLIC_URL + "/"}>
-                                    <img className="logo-light" src="/images/logo/logo.png" alt="Main Logo" />
+                                    <img className="logo-light" src="/images/logo/logogn.png" alt="Main Logo" />
                                 </Link>
                             </div>
                         </div>
@@ -47,9 +47,9 @@ const HeaderLandingPage = ( { styles, disableSticky, buttonStyle } ) => {
                             <div className="header-right d-flex justify-content-end">
                                 <div className="header-menu-bar">
                                     <div className="quote-icon quote-user d-none d-md-block ml--15 ml_sm--5">
-                                        <a className={`edu-btn btn-medium header-button purchase-button ${ buttonStyle || '' }`} href="https://1.envato.market/e4x0yZ" target="_blank" >
-                                            Purchase Now
-                                        </a>
+                                    <Link className={`edu-btn btn-medium left-icon header-button ${ buttonStyle || '' }`} to={process.env.PUBLIC_URL + "/login-register"}>
+                                        <i className="ri-user-line"></i>Login / Register
+                                    </Link>
                                     </div>
                                 </div>
                                 <div className="mobile-menu-bar ml--15 ml_sm--5 d-block d-xl-none">

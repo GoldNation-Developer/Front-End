@@ -7,51 +7,46 @@ const NavLandingDemo = () => {
             <li>
                 <Link
                     className="landing-demo-nav-btn"
-                    to="intro"
+                    to="about"
                     spy={true}
                     smooth={true}
                     duration={200}
                 >
-                    Intro
+                    About
                 </Link>
             </li>
             <li>
                 <Link
                     className="landing-demo-nav-btn"
-                    to="demos"
+                    to="kelas"
                     spy={true}
                     smooth={true}
                     duration={200}
                 >
-                    Demos
+                    Kelas
                 </Link>
             </li>
             <li>
                 <Link
                     className="landing-demo-nav-btn"
-                    to="features"
+                    to="program"
                     spy={true}
                     smooth={true}
                     duration={200}
                 >
-                    Features
+                    Program
                 </Link>
             </li>
             <li>
                 <Link
                     className="landing-demo-nav-btn"
-                    to="faq"
+                    to="testimoni"
                     spy={true}
                     smooth={true}
                     duration={200}
                 >
-                    FAQ
+                    Testimoni
                 </Link>
-            </li>
-            <li>
-                <a className="landing-demo-nav-btn" href="https://docs.devsvibe.com/eduvibe-react/index.html" target="_blank" rel="noreferrer">
-                    Documentation
-                </a>
             </li>
         </ul>
     )

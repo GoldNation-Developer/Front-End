@@ -12,9 +12,12 @@ const BannerTwo = () => {
                                 <span className="pre-title">Better Learning Future With Us</span>
                                 <h1 className="title">EXPLORE UNIVERSITAS</h1>
                                 <p className="description">Dapatkan info seputar universitas impianmu di seluruh dunia, <br /> belajar bahasa asing dari native langsung.</p>
-                                <div className="read-more-btn">
-                                    <Link className="edu-btn" to="#">Get Started Today <i  className="icon-arrow-right-line-right"></i></Link>
+                                <div className="input-box input-group" >
+                                    <input className='py-3' type="text" placeholder="Search Here" style={{width: '50%'}} />
                                 </div>
+                                {/* <div className="read-more-btn">
+                                    <Link className="edu-btn" to="#">Get Started Today <i  className="icon-arrow-right-line-right"></i></Link>
+                                </div> */}
                                 <div className="arrow-sign d-lg-block d-none">
                                     <img src="/images/banner/banner-02/arrow.png" alt="Banner Images" />
                                 </div>
