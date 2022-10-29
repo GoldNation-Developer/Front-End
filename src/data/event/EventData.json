@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Innovation & Technological Entrepreneurship Team",
+        "title": "Kelas Bahasa Inggris",
+        "subtitle": "Bahasa Inggris",
         "image": "event-01.jpg",
         "startDate": "28th Dec 2022",
         "startTime": "08:00 AM",
@@ -13,7 +14,8 @@
     },
     {
         "id": 2,
-        "title": "Virtual Spring Part-time Jobs Fair for Student",
+        "title": "Kelas Bahasa Korea",
+        "subtitle": "Bahasa Korea",
         "image": "event-02.jpg",
         "startDate": "30th Oct 2022",
         "startTime": "10:00 AM",
@@ -25,7 +27,8 @@
     },
     {
         "id": 3,
-        "title": "Explorations of Regional Chief Executive Network",
+        "title": "Kelas Bahasa Jepang",
+        "subtitle": "Bahasa Jepang",
         "image": "event-03.jpg",
         "startDate": "18th Sep 2022",
         "startTime": "05:00 PM",

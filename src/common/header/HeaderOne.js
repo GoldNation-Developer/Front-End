@@ -31,8 +31,8 @@ const HeaderOne = ( { styles, disableSticky } ) => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-xl-2 col-md-6 col-6">
                             <div className="logo">
-                                <Link to={process.env.PUBLIC_URL + "/"}>
-                                    <img className="logo-light" src="/images/logo/logo.png" alt="Main Logo" />
+                                <Link to={process.env.PUBLIC_URL + "/dashboard"}>
+                                    <img className="logo-light" src="/images/logo/logogn.png" alt="Main Logo" />
                                 </Link>
                             </div>
                         </div>

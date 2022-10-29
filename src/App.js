@@ -26,7 +26,6 @@ import CourseOne from './pages/course/CourseOne';
 import CourseTwo from './pages/course/CourseTwo';
 import CourseThree from './pages/course/CourseThree';
 import CourseFour from './pages/course/CourseFour';
-import CourseFive from './pages/course/CourseFive';
 import CourseFilterOne from './pages/course/CourseFilterOne';
 import CourseFilterTwo from './pages/course/CourseFilterTwo';
 import CourseCarousel from './pages/course/CourseCarousel';
@@ -38,7 +37,6 @@ import EventGrid from './pages/innerpages/EventGrid';
 import EventList from './pages/innerpages/EventList';
 import EventLoadMore from './pages/innerpages/EventLoadMore';
 import EventCarousel from './pages/innerpages/EventCarousel';
-import EventDetails from './pages/detailspages/EventDetails';
 import Faq from './pages/innerpages/Faq';
 import GalleryGrid from './pages/innerpages/GalleryGrid';
 import GalleryMasonry from './pages/innerpages/GalleryMasonry';
@@ -64,8 +62,12 @@ import './assets/scss/style.scss';
 
 // custom pages
 import LandingCustom from './pages/custom/LandingCustom';
-import LayoutPengguna from './common/layout/LayoutPengguna';
 import DashboardPengguna from './pages/dashboard/DashboardPengguna';
+import KelasInggris from './pages/course/KelasInggris';
+import KelasJepang from './pages/course/KelasJepang';
+import KelasKorea from './pages/course/KelasKorea';
+import KelasDetails from './pages/detailspages/KelasDetail';
+import TesBahasa from './pages/course/TesBahasa';
 
 
 function App() {
@@ -76,9 +78,12 @@ function App() {
                     <Route exact path='/' element={<LandingCustom/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/login-register'}`} element={<LoginRegister/>}/>
 
-                    <Route element={<LayoutPengguna/>}>
-                        <Route exact path={`${process.env.PUBLIC_URL + '/dashboard'}`} element={<DashboardPengguna/>}/>
-                    </Route>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/dashboard'}`} element={<DashboardPengguna/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/Kelas-bahasa-inggris'}`} element={<KelasInggris/>} />
+                    <Route exact path={`${process.env.PUBLIC_URL + '/Kelas-bahasa-jepang'}`} element={<KelasJepang/>} />
+                    <Route exact path={`${process.env.PUBLIC_URL + '/Kelas-bahasa-korea'}`} element={<KelasKorea/>} />
+                    <Route exact path={`${process.env.PUBLIC_URL + '/daftar-kelas'}`} element={<KelasDetails/>} />
+                    <Route exact path={`${process.env.PUBLIC_URL + '/tes-bahasa'}`} element={<TesBahasa/>} />
 
                     {/* ============================================================================= */}
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-1'}`} element={<HomeOne/>}/>
@@ -95,7 +100,6 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-2'}`} element={<CourseTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-3'}`} element={<CourseThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-4'}`} element={<CourseFour/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/course-5'}`} element={<CourseFive/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-filter-1'}`} element={<CourseFilterOne/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-filter-2'}`} element={<CourseFilterTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-carousel'}`} element={<CourseCarousel/>}/>
@@ -108,7 +112,6 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/event-list'}`} element={<EventList/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/event-load-more'}`} element={<EventLoadMore/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/event-carousel'}`} element={<EventCarousel/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/event-details/:id'}`} element={<EventDetails/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/faq'}`} element={<Faq/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/gallery-grid'}`} element={<GalleryGrid/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/gallery-masonry'}`} element={<GalleryMasonry/>}/>

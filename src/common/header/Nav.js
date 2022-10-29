@@ -1,24 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Nav = () => {
+    const { id } = useParams();
     return (
         <ul className="mainmenu">
             <li className="has-droupdown">
                 <Link to="#">Kelas Bahasa</Link>
                 <ul className="submenu">
-                    <li><Link to="/">Bahasa Inggris</Link></li>
-                    <li><Link to="/">Bahasa Jepang</Link></li>
-                    <li><Link to="/">Bahasa Korea</Link></li>
+                    <li><Link to="/kelas-bahasa-inggris">Bahasa Inggris</Link></li>
+                    <li><Link to="/kelas-bahasa-jepang">Bahasa Jepang</Link></li>
+                    <li><Link to="/kelas-bahasa-korea">Bahasa Korea</Link></li>
                 </ul>
             </li>
 
             <li className="has-droupdown">
                 <Link to="#">Test bahasa</Link>
                 <ul className="submenu">
-                    <li><Link to="/">TOEFL</Link></li>
-                    <li><Link to="/">TOEIC</Link></li>
-                    <li><Link to="/">IELTS</Link></li>
+                    <li><Link to="/tes-bahasa">TOEFL</Link></li>
+                    <li><Link to="/tes-bahasa">TOEIC</Link></li>
+                    <li><Link to="/tes-bahasa">IELTS</Link></li>
                 </ul>
             </li>
             

@@ -2,20 +2,22 @@ import React from 'react';
 import SEO from '../../common/SEO';
 import Layout from '../../common/Layout';
 import BreadcrumbOne from '../../common/breadcrumb/BreadcrumbOne';
-import CourseTypeFive from '../../components/course/CourseTypeFive'
+import CourseTypeThree from '../../components/course/CourseTypeThree';
 import CourseData from '../../data/course/CourseData.json';
+import { Link } from 'react-router-dom';
 
-const CourseFive = () => {
-    const CourseItems = CourseData.slice(0, 9);
+const KelasJepang = () => {
+    const CourseItems = CourseData.slice(0, 3);
+    
     return (
         <>
-            <SEO title="Course Style - 5" />
+            <SEO title="Bahasa Jepang" />
             <Layout>
                 <BreadcrumbOne 
-                    title="Course Style - 5"
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Course Style - 5"
+                    title="Kelas Bahasa Jepang"
+                    rootUrl="/dashboard"
+                    parentUrl="Dashboard"
+                    currentUrl="Bahasa Jepang"
                 />
                 <div className="edu-course-area edu-section-gap bg-color-white">
                     <div className="container">
@@ -23,7 +25,9 @@ const CourseFive = () => {
                             { 
                                 CourseItems.map((item) => (
                                     <div className="col-12 col-sm-6 col-lg-4" key={ item.id }>
-                                        <CourseTypeFive data={item} />
+                                       <Link to={process.env.PUBLIC_URL + `/daftar-jepang`}>
+                                            <CourseTypeThree data={item} />
+                                        </Link>
                                     </div>
                                 ) )
                             }
@@ -35,4 +39,4 @@ const CourseFive = () => {
     )
 }
 
-export default CourseFive;
+export default KelasJepang;

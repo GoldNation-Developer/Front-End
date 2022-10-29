@@ -18,23 +18,37 @@ input {
     padding: 0 15px;
 }
 
+// select {
+//     transition: 0.3s;
+//     height: 60px;
+//     line-height: 28px;
+//     padding: 10px 20px;
+//     outline: none;
+//     color: var(--color-body);
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     appearance: none;
+//     border: 2px solid var(--color-border);
+//     border-radius: var(--radius);
+//     font-size: 16px;
+//     line-height: 28px;
+//     font-weight: 400;
+//     padding-right: 30px;
+// }
+
 select {
     transition: 0.3s;
-    height: 60px;
-    line-height: 28px;
-    padding: 10px 20px;
+    padding: 0 15px;
+    height: 32px;
     outline: none;
     color: var(--color-body);
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
     border: 2px solid var(--color-border);
     border-radius: var(--radius);
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    padding-right: 30px;
 }
+
 
 .edu-select {
     transition: 0.3s;
